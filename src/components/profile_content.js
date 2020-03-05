@@ -5,10 +5,11 @@ function ProfileContent () {
     <Fragment>
       <div id='content_container'>
         <div className='block'>
-          <h1>Profile</h1>
+          <h1>A propos de moi</h1>
           <blockquote className='profile_quote'>
-            <p>"There is no end to education. It is not that you read a book, pass an examination, and finish with education. The whole of life, from the moment you are born to the moment you die, is a process of learning."</p>
-            <p>Jiddu Krishnamurti.</p>
+            <p>"Jusqu'à présent, dans ma vie, je passe de moments actifs avec beaucoup de variété, des défis et des improvisations à des moments de tranquillité et de stabilité. Je me considère comme une personne tolérante et respectueuse avec un esprit ouvert et très honnête. J'aime vraiment écouter les histoires et les antécédents des gens et leurs différentes expériences."</p>
+            <p>Diplômé de l'école ESPRIT en génie informatique en 2016. J'ai effectué un apprentissage de 5ans en développement C, OOP, Web, Mobile et Embarqué lors de cette formation.</p>
+            <p>Je suis maintenant développeur Full Stack JS depuis 3 ans. je suis très diligent en je m'engage à produire un code de qualité. je suis toujours particulièrement intétessé par les challenges techliques, j'aime r</p>
             <span className='entypo-quote' />
           </blockquote>
         </div>

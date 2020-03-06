@@ -1,29 +1,67 @@
 import React, { Fragment } from 'react'
 
 function ProfileContent () {
+  const renderHorizontalLine = () => {
+    return (
+      <div className='horizontal_line'>
+        <div className='line_left' />
+        <div className='left_circle' />
+        <div className='central_circle' />
+        <div className='right_circle' />
+        <div className='line_right' />
+      </div>
+    )
+  }
   return (
     <Fragment>
       <div id='content_container'>
         <div className='block'>
-          <h1>A propos de moi</h1>
+          <h1>Profil Personnel</h1>
           <blockquote className='profile_quote'>
-            <p>"Jusqu'à présent, dans ma vie, je passe de moments actifs avec beaucoup de variété, des défis et des improvisations à des moments de tranquillité et de stabilité. Je me considère comme une personne tolérante et respectueuse avec un esprit ouvert et très honnête. J'aime vraiment écouter les histoires et les antécédents des gens et leurs différentes expériences."</p>
-            <p>Diplômé de l'école ESPRIT en génie informatique en 2016. J'ai effectué un apprentissage de 5ans en développement C, OOP, Web, Mobile et Embarqué lors de cette formation.</p>
-            <p>Je suis maintenant développeur Full Stack JS depuis 3 ans. je suis très diligent en je m'engage à produire un code de qualité. je suis toujours particulièrement intétessé par les challenges techliques, j'aime r</p>
+            <p>"Jusqu’à présent, dans ma vie, je passe de moments actifs avec beaucoup de variété, des défis et des improvisations à des moments de tranquillité et de stabilité. Je me considère comme une personne tolérante et respectueuse avec un esprit ouvert et très honnête. J’aime vraiment écouter les histoires et les antécédents des gens et leurs différentes expériences."</p>
+            <p>Diplômé de l’école ESPRIT en génie informatique en 2016. J’ai effectué un apprentissage de 5ans en développement C, OOP, Web, Mobile et Embarqué lors de cette formation.</p>
+            <p>Je suis maintenant développeur Full Stack JS depuis 3 ans. Je suis très diligent en je m’engage à produire un code de qualité. Je suis toujours particulièrement intéressé par des challenges techniques, j’aime résoudre des problèmes complexes et je participe à la création d’applications performantes.</p>
             <span className='entypo-quote' />
           </blockquote>
         </div>
+        {renderHorizontalLine()}
         <div className='block'>
-          <h2>A propos de moi</h2>
-          <p>Jusqu'à présent, dans ma vie, je passe de moments actifs avec beaucoup de variété, des défis et des improvisations à des moments de tranquillité et de stabilité. Je me considère comme une personne tolérante et respectueuse avec un esprit ouvert et très honnête. J'aime vraiment écouter les histoires et les antécédents des gens et leurs différentes expériences.</p>
+          <h2>NIVEAUX D’INTERVENTION</h2>
+          <ul>
+            <li>Définition des besoins.</li>
+            <li>Développement & Conception.</li>
+            <li>Réalisation des composant.</li>
+            <li>Réalisation des services.</li>
+            <li>Test est maintenance.</li>
+            <li>Agilité/DEVOPS.</li>
+            <li>UI/UX.</li>
+          </ul>
         </div>
-        <div className='horizontal_line'>
-          <div className='line_left' />
-          <div className='left_circle' />
-          <div className='central_circle' />
-          <div className='right_circle' />
-          <div className='line_right' />
+        {renderHorizontalLine()}
+        <div className='last block'>
+          <h2>COMPETENCES</h2>
+          <ul>
+            <li><b>Bases de Données: </b> <i>PostgreSQL, MySQL, MongoDB, Redis</i></li>
+            <li><b>Développement : </b><i>JavaScript, jQuery, HTML, CSS, PHP, React, NodeJS, Express, Angular</i></li>
+            <li><b>Autres:</b> <i>Docker, Ansible, Vagrant,Docker,Jenkins,Git, GitLab, Ionic, Cordova ...etc</i></li>
+            <li><b>Outils:</b><i>Visual Studio Code, Postman, Sequel Pro, GitKraken..etc</i> </li>
+            <li><b>Méthodes:</b> <i>Scrum</i></li>
+            <li><b>Modélisation:</b> <i>UML, MV</i>C</li>
+          </ul>
         </div>
+        {renderHorizontalLine()}
+        <div className='last block'>
+          <h2>FORMATION</h2>
+          <ul>
+            <li><b>2016 - Tunis-Tunisie </b> <i>PostgreSQL, MySQL, MongoDB, Redis</i></li>
+            <li><b>Développement : </b><i>JavaScript, jQuery, HTML, CSS, PHP, React, NodeJS, Express, Angular</i></li>
+            <li><b>Autres:</b> <i>Docker, Ansible, Vagrant,Docker,Jenkins,Git, GitLab, Ionic, Cordova ...etc</i></li>
+            <li><b>Outils:</b><i>Visual Studio Code, Postman, Sequel Pro, GitKraken..etc</i> </li>
+            <li><b>Méthodes:</b> <i>Scrum</i></li>
+            <li><b>Modélisation:</b> <i>UML, MV</i>C</li>
+          </ul>
+        </div>
+        {renderHorizontalLine()}
         <div className='block'>
           <h2>Philosophy</h2>
           <p>I belive in ethic and moral not in imposed rules that you "have to" do or follow.</p>
@@ -39,26 +77,7 @@ function ProfileContent () {
             <div className='clear' />
           </div>
         </div>
-        <div className='horizontal_line'>
-          <div className='line_left' />
-          <div className='left_circle' />
-          <div className='central_circle' />
-          <div className='right_circle' />
-          <div className='line_right' />
-        </div>
-        <div className='last block'>
-          <h2>Interests & Hobbies</h2>
-          <p>I'm passionate about technology and human behavior, both determine almost all my interests and hobbies:</p>
-          <ul>
-            <li>Visiting new places</li>
-            <li>Meeting people</li>
-            <li>Having new experiences</li>
-            <li>Hiking and Biking</li>
-            <li>Web Developing</li>
-            <li>Computer Gamming</li>
-            <li>Manga and Anime</li>
-          </ul>
-        </div>
+
       </div>
       <div className='clear' />
     </Fragment>

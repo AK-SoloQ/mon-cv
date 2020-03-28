@@ -6,8 +6,16 @@
     #     copy:
     #       src: .
     #       dest: /home/ahmed/mon-cv2
+    # docker-compose -f docker-compose-prod.yml up -d --build
     - name: "[Ahmed] - git pull "
       git:
         repo: https://github.com/AK-SoloQ/mon-cv.git
         dest: /home/ahmed/mon-cv
-        refspec: "+refs/pull/*:refs/heads/*"
+        clone: no
+        update: yes
+    - name: Run `docker-compose up` again
+      docker_compose:
+        project_src: /home/ahmed/mon-cv
+        build: yes
+        files:
+          list: /docker-compose-prod.yml

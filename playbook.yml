@@ -1,0 +1,13 @@
+---
+- name: "[Ahmed]"
+  hosts: all
+  tasks:
+    #    - name: "[Ahmed] - copie des fichiers"
+    #     copy:
+    #       src: .
+    #       dest: /home/ahmed/mon-cv2
+    - name: "[Ahmed] - git pull "
+      git:
+        repo: https://github.com/AK-SoloQ/mon-cv.git
+        dest: /home/ahmed/mon-cv
+        refspec: "+refs/pull/*:refs/heads/*"
